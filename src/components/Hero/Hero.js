@@ -33,7 +33,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="flex h-full flex-col justify-center h-full m-12">
+    <section className="flex h-full flex-col justify-center h-full p-12">
       <div className="flex justify-center  mb-8 mt-8">
         <h1 className="font-mono text-4xl font-medium text-white uppercase bg-brand p-4 ">
           Orase din Romania
