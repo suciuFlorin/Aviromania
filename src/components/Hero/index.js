@@ -1,24 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Oradea from "../../assets/main/oradea.jpg";
 import Brasov from "../../assets/main/brasov.jpg";
 import Cluj from "../../assets/main/cluj.jpg";
 import Sibiu from "../../assets/main/sibiu.jpg";
 
 function Hero() {
-  const mainOrase = [
-    { name: "Oradea", src: Oradea },
-    { name: "Brasov", src: Brasov },
-    { name: "Cluj", src: Cluj },
-    { name: "Sibiu", src: Sibiu },
-  ];
+  const mainOrase = useMemo(
+    () => [
+      { name: "Oradea", src: Oradea },
+      { name: "Brasov", src: Brasov },
+      { name: "Cluj", src: Cluj },
+      { name: "Sibiu", src: Sibiu },
+    ],
+    []
+  );
+
   const [currentCity, setCurrentCity] = useState(mainOrase[0]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     let localIndex = 0;
     const interval = setInterval(() => {
-      console.log(localIndex, mainOrase.length);
-
       if (localIndex < mainOrase.length) {
         setIndex(localIndex);
         setCurrentCity(mainOrase[localIndex]);
@@ -27,10 +29,10 @@ function Hero() {
       if (localIndex === mainOrase.length) {
         localIndex = 0;
       }
-    }, 1000);
+    }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [mainOrase, setIndex]);
 
   return (
     <section className="flex h-full flex-col justify-center h-full p-12">
@@ -55,7 +57,7 @@ function Hero() {
           <img
             className="h-full w-full object-cover"
             src={currentCity.src}
-            alt={`main picture of the city ${mainOrase[index]}`}
+            alt={`main city ${mainOrase[index]}`}
           />
         </div>
       </div>
