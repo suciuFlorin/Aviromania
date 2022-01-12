@@ -25,6 +25,12 @@ import imgCj3 from "../assets/cluj/opera.jpg";
 import imgSb1 from "../assets/sibiu/art.jpg";
 import imgSb2 from "../assets/sibiu/cont.jpg";
 import imgSb3 from "../assets/sibiu/heltau.jpg";
+import {
+  ATRACTII_TURISTICE_BRASOV,
+  ATRACTII_TURISTICE_CLUJ,
+  ATRACTII_TURISTICE_ORADEA,
+  ATRACTII_TURISTICE_SIBIU,
+} from "./atractii";
 
 export const ORASE = ["Oradea", "Brasov", "Cluj Napoca", "Sibiu"];
 
@@ -36,7 +42,7 @@ export const DETALII_ORASE = {
       imgMain: imgMainOradea,
       imgSecond: imgSecondOradea,
     },
-    atractii_turistice: {},
+    atractii_turistice: ATRACTII_TURISTICE_ORADEA,
     cazare: [
       {
         img: imgOr1,
@@ -68,7 +74,7 @@ export const DETALII_ORASE = {
       imgMain: imgMainBrasov,
       imgSecond: imgSecondBrasov,
     },
-    atractii_turistice: {},
+    atractii_turistice: ATRACTII_TURISTICE_BRASOV,
     cazare: [
       {
         img: imgBv1,
@@ -100,7 +106,7 @@ export const DETALII_ORASE = {
       imgMain: imgMainClujNapoca,
       imgSecond: imgSecondClujNapoca,
     },
-    atractii_turistice: {},
+    atractii_turistice: ATRACTII_TURISTICE_CLUJ,
     cazare: [
       {
         img: imgCj1,
@@ -132,7 +138,7 @@ export const DETALII_ORASE = {
       imgMain: imgMainSibiu,
       imgSecond: imgSecondSibiu,
     },
-    atractii_turistice: {},
+    atractii_turistice: ATRACTII_TURISTICE_SIBIU,
     cazare: [
       {
         img: imgSb1,

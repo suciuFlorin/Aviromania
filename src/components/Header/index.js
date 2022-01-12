@@ -16,7 +16,7 @@ function Header() {
     <Popover className="relative bg-white border-b-4 border-brand">
       <div className="max-w-7xl mx-auto px-2">
         <div className="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start lg:w-0 lg:flex-1  hover:animate-pulse">
             <NavLink to="/" className="flex justify-center align-middle">
               <img
                 className="h-8 w-auto sm:h-10"
@@ -34,7 +34,7 @@ function Header() {
               </div>
             </NavLink>
           </div>
-          <Popover.Group as="nav" className="hidden md:flex space-x-10">
+          <Popover.Group as="nav" className="hidden md:flex space-x-10 ">
             {!orasSelectat &&
               ORASE.map((oras) => {
                 const linkOras = `${oras
@@ -45,7 +45,7 @@ function Header() {
                     to={linkOras}
                     key={linkOras}
                     className={({ isActive }) =>
-                      `text-base font-medium text-brand hover:text-gray-900 ${
+                      ` text-base font-medium text-brand hover:text-stone-800 hover:font-semibold hover:bg-gradient-to-t from-amber-400 to-transparent hover:rounded pl-2 pr-2 ${
                         isActive ? activeStyle : ""
                       }`
                     }
@@ -62,7 +62,7 @@ function Header() {
                     to={linkAtractie}
                     key={linkAtractie}
                     className={({ isActive }) =>
-                      `text-base font-medium text-brand hover:text-gray-900 ${
+                      `text-base font-medium text-brand hover:text-stone-800 hover:font-semibold hover:bg-gradient-to-t from-amber-400 to-transparent hover:rounded pl-2 pr-2 ${
                         isActive ? activeStyle : ""
                       }`
                     }

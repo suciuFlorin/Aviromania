@@ -25,7 +25,7 @@ function Cazare() {
               <img
                 src={cazare.img}
                 alt={cazare.titlu}
-                className="w-full object-cover h-fit"
+                className="w-full object-cover h-fit xl:max-h-80"
               />
               <div className=" p-8 sm:p-9 md:p-7 xl:p-9 text-center bg-stone-200 h-full">
                 <p className="text-black text-body-color leading-relaxed mb-7">
@@ -33,7 +33,7 @@ function Cazare() {
                 </p>
                 <a
                   href={cazare.href}
-                  className="flex justify-items-center items-center content-center gap-2 justify-center bg-amber-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 text-center"
+                  className="flex justify-items-center items-center content-center gap-2 justify-center bg-amber-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-orange-600 mr-6 text-center"
                 >
                   Rezerva aici
                   <FontAwesomeIcon icon={faArrowRight} />

@@ -9,7 +9,7 @@ function Despre() {
 
   return (
     <div className=" px-2 h-full overflow-auto xl:flex flex-col">
-      <div class="flex justify-center  mb-8 mt-8">
+      <div className="flex justify-center  mb-8 mt-8">
         <h1 className="font-mono text-4xl font-medium text-white uppercase bg-brand p-4">
           Despre orasul {oras}
         </h1>
@@ -18,7 +18,11 @@ function Despre() {
       <div className="xl:flex">
         <div className="w-full xl:w-1/2 px-4">
           <div className="bg-white rounded-lg overflow-hidden mb-10">
-            <img src={detalii.imgMain} alt="image" className="w-full" />
+            <img
+              src={detalii.imgMain}
+              alt={`preview 1 of ${oras}`}
+              className="w-full xl:h-[30rem]"
+            />
             <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
               <p class="text-base text-body-color leading-relaxed mb-7">
                 {detalii.textMain}
@@ -28,7 +32,11 @@ function Despre() {
         </div>
         <div className="w-full xl:w-1/2 px-4">
           <div className="bg-white rounded-lg overflow-hidden mb-10">
-            <img src={detalii.imgSecond} alt="image" className="w-full" />
+            <img
+              src={detalii.imgSecond}
+              alt={`preview 2 of ${oras}`}
+              className="w-full xl:h-[30rem]"
+            />
             <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
               <p class="text-base text-body-color leading-relaxed mb-7">
                 {detalii.textSecond}
