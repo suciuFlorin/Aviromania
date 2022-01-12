@@ -33,10 +33,10 @@ function AtractiiTuristice() {
         </h1>
       </div>
 
-      <div className="flex h-full content-center self-center items-center">
+      <div className="flex h-4/5 content-center self-center items-center">
         <button
           onClick={() => handleBackward()}
-          className="flex h-[30rem] justify-items-center items-center content-center gap-2 justify-center bg-amber-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-orange-600 ml-6 mr-6 xs:h-full md:h-full"
+          className="flex h-72 justify-items-center items-center content-center gap-2 justify-center bg-amber-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-orange-600 ml-6 mr-6 xs:h-full md:h-full"
         >
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
@@ -51,9 +51,9 @@ function AtractiiTuristice() {
               <img
                 src={atractie.src}
                 alt={atractie.titlu}
-                className="w-3/6 object-cover h-[30rem] sm:w-full sm:h-full"
+                className="w-3/6 object-cover h-72 sm:w-full sm:h-full"
               />
-              <div className="flex flex-col p-8 sm:p-9 md:p-7 xl:p-9 text-center bg-stone-200 h-[30rem] items-center content-center justify-center sm:h-full md:h-full">
+              <div className="flex h-72 flex-col p-8 sm:p-9 md:p-7 xl:p-9 text-center bg-stone-200 items-center content-center justify-center sm:h-full w-3/6">
                 <h2 className="font-semibold text-dark text-3xl mb-4 block hover:text-primary text-center">
                   {atractie.titlu}
                 </h2>
@@ -66,7 +66,7 @@ function AtractiiTuristice() {
         ))}
         <button
           onClick={() => handleForward()}
-          className="flex h-[30rem] justify-items-center items-center content-center gap-2 justify-center bg-amber-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-orange-600 ml-6 mr-6 xs:h-full md:h-full"
+          className="flex h-72 justify-items-center items-center content-center gap-2 justify-center bg-amber-500 rounded-full font-bold text-white px-4 py-3 transition duration-300 ease-in-out hover:bg-orange-600 ml-6 mr-6 xs:h-full md:h-full"
         >
           <FontAwesomeIcon icon={faArrowRight} />
         </button>
